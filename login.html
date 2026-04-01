@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#style2{
+    background-color:dodgerBlue;
+    height:500px;
+    width:700px;
+    color:white;
+    border:20px solid black;
+    margin:20px auto;
+    padding:20px;
+    text-align:center;
+}
+
+#par{
+    background-color:orange;
+}
+</style>
+</head>
+
+<body>
+
+<div id="style2">
+
+<form onsubmit="return valid()" action="dashboard.html">
+
+<img src="Franqlin.jpg" width="120" height="80">
+<img src="key1.png" width="120" height="80" align="right">
+
+<br><br><br>
+
+<h3>Admin Login</h3>
+
+<input type="text" placeholder="Username" id="username" 
+style="width:650px;height:50px;" required>
+
+<br><br>
+
+<input type="password" placeholder="Password" id="password" 
+style="width:650px;height:50px;" required>
+
+<br><br>
+
+<input type="submit" value="Sign in" id="par" 
+style="width:650px;height:50px;">
+
+<br><br>
+
+<p style="color:yellow">Forget password</p>
+
+</form>
+
+</div>
+
+<script>
+function valid(){
+    var a = document.getElementById("username").value;
+    var b = document.getElementById("password").value;
+
+    if(a=="hospitalmanagement@gmail.com" && b=="hms@123"){
+        return true;   // login success
+    }
+    else{
+        alert("Invalid Login");
+        return false;  // stop login
+    }
+}
+</script>
+
+</body>
+</html>
